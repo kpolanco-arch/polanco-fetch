@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Take-Home Exercise</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer="defer"></script>
+</head>
+<body>
+    
+    <form id="form" name="UserForm" onsubmit="return errorMessages()" method="post">
+        <h2 id="head-text">NEW USER</h2>
+        <label>Full Name 
+            <input type="text" id="name" required>
+        </label>
+        <label>Email<input type="text" id="email" required ></label>
+        <label>Password<input id="password" type="password" required minlength="6"maxlength="12"></label>
+        <label id="EP"for="occupation-options">Occupation
+        <div id= "occupation-options"></div></label>
+        <label id="EP">State
+        <div id="state-options" onclick="resetColor()"></div></label>
+        <input type="submit" value="Submit" />
+        <div id="logo">
+            <img src="https://play-lh.googleusercontent.com/Wp04kHKeRt5oxz6xiKDycqaOMrZ0zta0Bt3Lh6C6u7DBPtyyJb__zRgf8jEsVXsLJgI=h500" alt="Fetch Rewards">
+        </div>
+    </form>
+</body>
+</html>
